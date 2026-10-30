@@ -6,6 +6,10 @@ ex:Tarea1 rdf:type ex:Tarea ;
     rdfs:label "Configurar servidor Fuseki"@es ;
     ex:completada false .
 
-ex:Tarea2 rd:type ex:Tarea ;
+ex:Tarea2 rdf:type ex:Tarea ;
     rdfs:label "Escribir consultas SPARQL"@es ;
     ex:completada true.
+
+ex:Tarea3 rdf:type ex:Tarea ;
+    rdfs:label "Probar versionado en Git y GitHub"@es ;
+    ex:completada True .
