@@ -1,0 +1,34 @@
+@prefix ex: <http://ejemplo.org/biblioteca/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# --- Clases ---
+ex:Libro a rdfs:Class ;
+    rdfs:label "Libro"@es .
+
+ex:Autor a rdfs:Class ;
+    rdfs:label "Autor"@es .
+
+# --- Propiedades ---
+ex:escritoPor a rdf:Property ;
+    rdfs:domain ex:Libro ;
+    rdfs:range ex:Autor .
+
+ex:paginas a rdf:Property ;
+    rdfs:domain ex:Libro ;
+    rdfs:range xsd:integer .
+
+# --- Instancias / Datos ---
+ex:Autor1 a ex:Autor ;
+    rdfs:label "Gabriel García Márquez"@es .
+
+ex:Libro1 a ex:Libro ;
+    rdfs:label "Cien años de soledad"@es ;
+    ex:escritoPor ex:Autor1 ;
+    ex:paginas 471 .
+
+ex:Libro2 a ex:Libro ;
+    rdfs:label "El amor en los tiempos del cólera"@es ;
+    ex:escritoPor ex:Autor1 ;
+    ex:paginas 368 .
