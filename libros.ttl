@@ -32,3 +32,11 @@ ex:Libro2 a ex:Libro ;
     rdfs:label "El amor en los tiempos del cólera"@es ;
     ex:escritoPor ex:Autor1 ;
     ex:paginas 368 .
+
+ex:Autor2 a ex:Autor ;
+    rdfs:label "Jorge Luis Borges"@es .
+
+ex:Libro3 a ex:Libro ;
+    rdfs:label "Ficciones"@es ;
+    ex:escritoPor ex:Autor2 ;
+    rdfs:paginas 212 .
